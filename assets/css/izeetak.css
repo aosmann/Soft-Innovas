@@ -190,7 +190,53 @@ canvas {
     color: var(--thm-base);
 }
 
+.thm-btn-school {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    border: 2px solid var(--thm-primary);
+    outline: none !important;
+    background-color: none;
+    color: var(--thm-base);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 18px 60px 18px;
+    border-radius: 2px;
+    transition: all 0.3s linear;
+    overflow: hidden;
+    letter-spacing: 0.2em;
+    z-index: 1;
+}
 
+.thm-btn-school:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--thm-primary);
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    transition-property: all;
+    opacity: 1;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transform: scaleY(0);
+    z-index: -1;
+}
+
+.thm-btn-school:hover:after {
+    opacity: 1;
+    transform: scaleY(1.0);
+}
+
+.thm-btn-school:hover {
+    color: var(--thm-base);
+}
 
 .section-title {
     margin-top: -19px;
@@ -1882,6 +1928,15 @@ canvas {
 /*--------------------------------------------------------------
 # About One
 --------------------------------------------------------------*/
+
+.staff-img {
+    order: 2;
+}
+
+.staff-text {
+    order: 1;
+}
+
 .about-one {
     position: relative;
     display: block;
@@ -4627,11 +4682,11 @@ canvas {
     left: 0;
     right: 0;
     bottom: 0;
+    min-height: 460px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    mix-blend-mode: luminosity;
-    opacity: 0.3;
+
 }
 
 
