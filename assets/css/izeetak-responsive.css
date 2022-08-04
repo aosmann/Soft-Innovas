@@ -220,6 +220,9 @@
         opacity: .3;
     }
 
+    .staff-img {
+        order: 1;
+    }
 
 
 
@@ -515,6 +518,9 @@
         opacity: .3;
     }
 
+    .staff-img {
+        order: 1;
+    }
 
 
 
@@ -992,6 +998,9 @@
         opacity: 0;
     }
 
+    .staff-img {
+        order: 1;
+    }
 
 
 
